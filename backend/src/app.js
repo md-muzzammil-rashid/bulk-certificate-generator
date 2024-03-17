@@ -23,7 +23,10 @@ app.use(
 //importing routes
 
 import UserRoutes from "./routes/user.routes.js"
+import CompileRoutes from './routes/compile.routes.js'
 
 app.use('/api/v1/users', UserRoutes)
+
+app.use('/api/v1/compile', CompileRoutes)
 
 export default app
